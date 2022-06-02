@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+}
+
+#modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	z-index: 1;
+}
+#modal.active {
+	display: block;
+}
+.modal_up {
+	width: 500px;
+	height: 400px;
+	position: fixed;
+	left: 30%;
+	top: 20%;
+	background-color: #fff;
+    .btn {
+        height: 25px;
+        width: 100px;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 3px;
+        background-color: #999999;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+.uptitle {
+	margin-top: 30px;
+	text-align: center;
+	line-height: 16px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.upbody {
+	padding: 30px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+
+.wrapper{
+    z-index: -999 !important;
+}
+
+.backgroundCover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -99;
+    background: rgba(40, 40, 40, 0.7);
+}
+
+
+.container{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    width: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+// ** header start **
+
+header {
+    position: relative;
+    width: 100%;
+    height: 67px;
+}
+
+.top{
+    height: 67px;
+    width: 100%;
+    // background: blue;
+}
+
+.logo{
+    display: flex;
+    float: left;
+    height: 67px;
+    width: 180px;
+    
+    img{
+        float: left;
+        height: 100px;
+        width: 150px;
+        margin: 0 0 0 0;
+    }
+}
+
+.menu{
+    position: absolute;
+    float: right;
+    // right: 200px;
+    height: 67px;
+    width: 100%;
+    // background-color: red;
+    z-index: 1;
+
+    li{
+        display: inline-block;
+    }
+}
+
+.navi{
+    float: right;
+    margin-top: 30px;
+
+    li{
+        float: left;
+        a{
+            height: 40px;
+            width: 180px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #27C7FF;
+            color: #fff;
+        }
+        a:hover{
+            background: #a3e7ff;
+            color: #888888;
+        }
+    }
+}
+
+.submenu{
+    width: 180px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-left: 0;
+
+    li{
+        a{
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            background-color: whitesmoke;
+            color: #27C7FF;
+        }
+    }
+}
+
+// ** header end **
+
+// ** body start **
+
+
+// ** ** Image Slide **
+.imgslide{
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.imgText{
+    height: 50px;
+    width: 700px;
+    position: absolute;
+    right: 20%;    
+    top: 400px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    background-color: rgba(40, 40, 40, 0.7);
+}
+
+// ** ** Image Slide End** **
+
+// ** ** Parallex Image Start ** ** 
+.parall{
+    position: relative;
+    min-height: 730px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 200px 0 0 0;
+
+    .parallContent{
+        text-align: center;
+        margin-top: 25%;
+        h3{
+            font-size: 72px;
+            background-color: rgba(40, 40, 40, 0.7);
+            color: white;
+        }
+    }
+}
+
+.bg-holder{
+    width: 100%;
+    height: 100%;
+}
+
+#ms1{
+    background-image: url(./resrc/img/parall_Image.png);
+}
+// ** ** Parallex Image End ** ** 
+
+// Content Start
+.contents {
+    margin-top: 200px;
+	height: 200px;
+	width: 100%;
+}
+.notice {
+	float: left;
+	height: 180px;
+	width: 390px;
+	margin-top: 10px;
+	>div {
+		width: 390px;
+		border-bottom: rgb(114, 71, 255);
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+	}
+    ul{
+        padding-left: 0;
+    }
+	li {
+        background-color: rgba(255, 255, 255, 0.5);
+		float: left;
+		height: 38px;
+		width: 390px;
+		line-height: 38px;
+		font-size: 14px;
+		span {
+			float: right;
+		}
+		&:nth-child(even) {
+			background-color: rgb(114, 71, 255);
+		}
+		&:hover {
+			font-weight: bold;
+		}
+        a{
+            text-decoration: none !important;
+            color: black;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+	}
+}
+.tab {
+	float: left;
+	width: 400px;
+	h4 {
+		float: left;
+		height: 20px;
+		width: 120px;
+		line-height: 20px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgb(114, 71, 255);
+	}
+}
+.gallery {
+	float: left;
+	height: 180px;
+	width: 390px;
+	margin: 10px 10px 0 10px;
+    ul{
+        padding-left: 0;
+    }
+	div {
+		width: 390px;
+		border-bottom-color: rgb(114, 71, 255);
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+	li {
+		float: left;
+		margin: 10px 0 0 4px;
+	}
+	img {
+		height: 145px;
+		width: 125px;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+.shortcut {
+	float: right;
+	height: 180px;
+	width: 200px;
+	margin-top: 10px;
+	img {
+		float: right;
+		height: 180px;
+		width: 200px;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+.sctext {
+	float: right;
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	line-height: 30px;
+	background-color: rgba(40, 40, 40, 0.5);
+	margin: 80px 0 0 50px;
+}
+
+// Content End
